@@ -1,0 +1,28 @@
+_format_version: "3.0"
+_transform: true
+
+services:
+- name: orchestrator-service
+  url: http://orchestrator_agent:8000
+
+- name: policy-service
+  url: http://policy_service:8000
+
+routes:
+- name: process-request-route
+  service:
+    name: orchestrator-service
+  paths:
+  - /process-request
+  strip_path: false
+  methods:
+  - POST
+  plugins:
+    - name: rate-limiting
+      config:
+        minute: 5
+        policy: local
+    - name: key-auth
+      config:
+        key_names: [apikey]
+        run_on_preflight: false

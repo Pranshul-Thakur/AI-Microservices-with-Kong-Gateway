@@ -1,0 +1,6 @@
+HTTP Request: POST http://retriever_agent:8000/retrieve "HTTP/1.1 200 OK"
+HTTP Request: POST http://processor_agent:8000/process "HTTP/1.1 200 OK"
+{"trace_id": "ed394391-8d4b-44f4-a139-4939ab7de7e4", "request_id": "req-final-test-123", "api_key_consumer": "ai-client-app", "status": "success"}
+HTTP Request: POST http://retriever_agent:8000/retrieve "HTTP/1.1 200 OK"
+HTTP Request: POST http://processor_agent:8000/process "HTTP/1.1 200 OK"
+{"trace_id": "1aa54a85-8de4-4f97-bc85-cd5097502cde", "request_id": "req-final-test-123", "api_key_consumer": "ai-client-app", "status": "success"}
