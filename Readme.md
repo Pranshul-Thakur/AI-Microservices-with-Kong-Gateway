@@ -70,7 +70,7 @@ curl.exe -X POST http://localhost:8001/consumers/ai-client-app/key-auth/ --data 
 
 ## How to Test the System
 
-### Important Note for PowerShell Users
+### Note
 
 PowerShell can have issues with complex curl commands. For the best results, we will save the request body to a file first.
 
@@ -137,11 +137,3 @@ To stop and remove all running containers and networks, run:
 ```bash
 docker-compose down
 ```
-
-## License
-
-[Add your license here]
-
-## Contributing
-
-[Add contribution guidelines here]
